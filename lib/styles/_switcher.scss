@@ -2,13 +2,11 @@
 	 ========================================================================== */
 
 .switcher {
+	@include user-select(none);
 	border-radius: 1.2rem;
 	border: .1rem solid rgba($secondary, .2);
 	height: 2.2rem;
 	width: 4rem;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
 }
 
 .switcher-control {

@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 body {
 	background: #f4f8ff;
 }
@@ -15,13 +17,11 @@ a:hover {
 	 ========================================================================== */
 
 .centered {
+	@include backface-visibility(hidden);
+	@include transform(translateX(-50%) translateY(-50%));
 	left: 50%;
 	position: fixed !important;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-webkit-backface-visibility: hidden;
 }
 
 .round {
